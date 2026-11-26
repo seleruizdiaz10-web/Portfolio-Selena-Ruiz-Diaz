@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&lt;Selena.dev /&gt; | Selena Ruiz Diaz — Programadora Frontend &amp; Software</title>
+  
+  <!-- Meta SEO -->
+  <meta name="description" content="Portfolio interactivo y profesional de Selena Ruiz Diaz, estudiante de programación en E.E.S.T N°5 y desarrolladora Frontend. Proyectos reales, formación académica y habilidades técnicas.">
+  <meta name="keywords" content="Selena Ruiz Diaz, Desarrolladora Frontend, Programadora, E.E.S.T N°5, JavaScript, Python, PHP, Firebase, Portfolio, Web Developer">
+  <meta name="author" content="Selena Ruiz Diaz">
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Selena Ruiz Diaz | Programadora Frontend">
+  <meta property="og:description" content="Diseño y desarrollo de experiencias web interactivas con identidad visual, código modular y proyectos reales.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="mi portfolio.css">
+</head>
+<body>
+  <div class="page-shell">
+    <!-- Ambient Background Blobs -->
+    <div class="ambient ambient-one" data-parallax="0.14"></div>
+    <div class="ambient ambient-two" data-parallax="0.22"></div>
+    <div class="ambient ambient-three" data-parallax="0.1"></div>
+
+    <!-- ==================== HEADER & NAVBAR ==================== -->
+    <header class="topbar">
+      <a class="brand" href="#inicio">
+        <span class="brand-code">&lt;Selena /&gt;</span>
+        <span class="brand-subtitle">Ruiz Diaz</span>
+      </a>
+
+      <nav class="nav" id="nav-links">
+        <a href="#sobre-mi"><span class="nav-idx">| 1.</span> Sobre mí</a>
+        <a href="#formacion"><span class="nav-idx">| 2.</span> Formación</a>
+        <a href="#habilidades"><span class="nav-idx">| 3.</span> Habilidades (%)</a>
+        <a href="#proyectos"><span class="nav-idx">| 4.</span> Proyectos</a>
+        <a href="#enfoque"><span class="nav-idx">| 5.</span> Enfoque</a>
+        <a href="#contacto"><span class="nav-idx">| 6.</span> Contacto</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <button type="button" class="btn-nav-cv open-cv-btn">📄 Ver CV</button>
+        <button class="mobile-toggle" id="mobile-menu-btn" aria-label="Abrir Menú de navegación">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ==================== HERO SECTION ==================== -->
+      <section class="hero panel reveal" id="inicio">
+        <div class="hero-copy">
+          <span class="eyebrow">// Portfolio Personal • E.E.S.T N°5</span>
+          
+          <h1 class="hero-title">
+            Hola, soy <span class="text-accent">Selena</span>.<br>
+            <span class="typing-wrapper">&gt; <span id="typing-text"></span><span class="cursor-blink">|</span></span>
+          </h1>
+
+          <p class="lead">
+            Diseño y desarrollo experiencias web coloridas, dinámicas e intuitivas,
+            combinando lógica de programación, arquitectura escalable y una profunda
+            sensibilidad por el diseño visual y la experiencia de usuario.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+            <a class="btn btn-secondary" href="#contacto">Hablemos</a>
+            <button type="button" class="btn btn-outline open-cv-btn">📄 Ver CV</button>
+          </div>
+
+          <!-- Quick Access Social Bar -->
+          <div class="hero-social-bar">
+            <span class="hero-social-label">Acceso Directo:</span>
+            <a href="https://github.com/seleruizdiaz10-web" target="_blank" rel="noreferrer" class="social-pill" title="GitHub">
+              <span>GitHub</span>
+            </a>
+            
+            <button class="social-pill" id="copy-email-btn" data-email="seleruizdiaz10@gmail.com" title="Click para copiar Email">
+              <span>Email: seleruizdiaz10@gmail.com</span>
+            </button>
+            <a href="https://wa.me/5491137554748" target="_blank" rel="noreferrer" class="social-pill" title="WhatsApp">
+              <span>WhatsApp Directo</span>
+            </a>
+          </div>
+
+          <!-- Hero Highlights -->
+          <ul class="hero-stats">
+            <li>
+              <strong>Diseño UI/UX</strong>
+              <span>Interfaces agradables con jerarquía y paletas armónicas</span>
+            </li>
+            <li>
+              <strong>Código Claro</strong>
+              <span>Estructura modular, escalable y mantenible</span>
+            </li>
+            <li>
+              <strong>Estilo Propio</strong>
+              <span>Narrativa visual, microanimaciones e identidad</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hero Visual Showcase -->
+        <div class="hero-visual">
+          <div class="portrait-card tilt-card" data-parallax="0.08">
+            <!-- Nueva Foto de Selena -->
+            <img src="foto_selena.jpg" alt="Foto de Selena Ruiz Diaz" class="portrait-circle tilt-card">
+            <div class="portrait-nameplate">
+              <strong>Selena Ruiz Diaz</strong>
+              <span>Programadora Frontend</span>
+            </div>
+          </div>
+          
+          <div class="floating-card card-b tilt-card" data-parallax="0.12">
+            <span>Frontend &amp; UI</span>
+            <strong>Animación + Identidad + Detalle</strong>
+          </div>
+
+          <div class="floating-card card-c tilt-card" data-parallax="0.15">
+            <span>Stack Creativo</span>
+            <strong>HTML, CSS, JS, Firebase &amp; Python</strong>
+          </div>
+          
+          <div class="portrait-glow"></div>
+          <svg class="hero-orbit" viewBox="0 0 500 500" role="presentation">
+            <path d="M106.5 250c0-79.2 64.3-143.5 143.5-143.5S393.5 170.8 393.5 250 329.2 393.5 250 393.5 106.5 329.2 106.5 250Z"></path>
+            <path d="M54 250c0-108.2 87.8-196 196-196S446 141.8 446 250 358.2 446 250 446 54 358.2 54 250Z"></path>
+          </svg>
+        </div>
+      </section>
+
+      <!-- ==================== 01. SOBRE MÍ ==================== -->
+      <section class="section-container" id="sobre-mi">
+        <div class="section-head reveal">
+          <span class="eyebrow">// 01. Sobre Mí</span>
+          <h2>Construyo sitios web con identidad, adaptándome a cualquier estilo.</h2>
+          <p class="section-subtitle">Compromiso con la sensibilidad visual, la arquitectura limpia y la entrega con valor real.</p>
+        </div>
+
+        <div class="story-grid">
+          <article class="panel reveal">
+            <span class="eyebrow">Mi Trayectoria &amp; Filosofía</span>
+            <h3>Pasión por el código y el diseño</h3>
+            <p>
+              ¡Hola! Soy <strong>Selena Ruiz Diaz</strong>, estudiante de la Escuela de Educación Secundaria Técnica N° 5 "Dr. Manuel Sadosky" con especialización en Programación y desarrollo de software.
+            </p>
+            <p>
+              Mi interés por la tecnología nació del deseo de entender cómo dar vida a interfaces intuitivas y dinámicas. Hoy en día desarrollo proyectos completos: desde la concepción del diseño visual, wireframes y selección tipográfica, hasta la implementación técnica con JavaScript, bases de datos en tiempo real y lógica backend.
+            </p>
+            <p>
+              Disfruto trabajar en proyectos colaborativos, aplicar metodologías ágiles (Scrum) y resolver desafíos técnicos con una mirada creativa que prioriza tanto la fluidez del usuario como la prolijidad del código fuente.
+            </p>
+          </article>
+
+          <article class="panel reveal accent-panel">
+            <span class="eyebrow">Mi Enfoque Técnico</span>
+            <ul class="feature-list">
+              <li><strong>Experiencias Interactivas:</strong> Microanimaciones sutiles, transiciones suaves y navegación envolvente.</li>
+              <li><strong>Identidad &amp; Jerarquía:</strong> Paletas armónicas, lectura cómoda y diseño mobile first responsive.</li>
+              <li><strong>Soluciones Escalables:</strong> Integración de APIs, autenticación en la nube con Firebase y estructura modular.</li>
+            </ul>
+            <p style="margin-top: 18px;">
+              Busco el equilibrio perfecto entre rendimiento técnico y personalidad estética. Cada proyecto es una oportunidad para aprender algo nuevo y construir una pieza digital única.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ==================== 02. FORMACIÓN ACADÉMICA ==================== -->
+      <section class="section-container" id="formacion">
+        <div class="section-head reveal">
+          <span class="eyebrow">// 02. Formación Académica</span>
+          <h2>Trayectoria, aprendizaje técnico y proyectos continuos.</h2>
+          <p class="section-subtitle">Mi camino educativo formal y la profundización en tecnologías modernas de desarrollo.</p>
+        </div>
+
+        <div class="timeline-tree">
+          <!-- Item 1: Secundaria Técnica -->
+          <div class="timeline-node reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card panel tilt-card">
+              <div class="timeline-header">
+                <h3>Escuela de Educación Secundaria Técnica N° 5 "Dr. Manuel Sadosky"</h3>
+                <span class="timeline-badge">2020 — Cursando Actualmente</span>
+              </div>
+              <p class="timeline-subtitle">Especialización en Programación y Desarrollo de Software</p>
+              <p class="timeline-text">
+                Formación integral en desarrollo de software, algoritmia y estructuras de datos, trabajo colaborativo con metodologías ágiles (Scrum), control de versiones con Git/GitHub, modelado relacional (DER) y diagramación UML. Participación activa en las Olimpiadas de Programación con proyectos institucionales de gran impacto.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2: Tecnologías Web Modernas -->
+          <div class="timeline-node reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card panel tilt-card">
+              <div class="timeline-header">
+                <h3>Desarrollo Web &amp; Tecnologías Modernas</h3>
+                <span class="timeline-badge">2024 — Presente</span>
+              </div>
+              <p class="timeline-subtitle">JavaScript ES6+, Firebase, PHP, Python y Diseño UI/UX</p>
+              <p class="timeline-text">
+                Desarrollo continuo de proyectos prácticos orientados a la producción: integración de autenticación en la nube con Google Firebase, tiendas online con PHP, software de escritorio y control de stock en Python con CustomTkinter, y maquetación web con animaciones y microinteracciones personalizadas.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3: Educación Primaria -->
+          <div class="timeline-node reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card panel tilt-card">
+              <div class="timeline-header">
+                <h3>Educación Primaria &amp; Formación Inicial</h3>
+                <span class="timeline-badge">2013 — 2019</span>
+              </div>
+              <p class="timeline-subtitle">Escuela Nuestra Señora de Ranelagh &amp; Instituto Alte. G. Brown</p>
+              <p class="timeline-text">
+                Educación primaria cursada en Escuela Nuestra Señora de Ranelagh (2016-2019) e Instituto Almirante G. Brown (2013-2015), consolidando bases analíticas, compañerismo y dedicación al estudio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== 03. HABILIDADES TÉCNICAS (%) ==================== -->
+      <section class="section-container" id="habilidades">
+        <div class="section-head reveal">
+          <span class="eyebrow">// 03. Habilidades Técnicas</span>
+          <h2>Skills &amp; Dominio Porcentual (%)</h2>
+          <p class="section-subtitle">Evaluación objetiva de mis competencias técnicas organizadas por capas de desarrollo.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Card 1: Frontend -->
+          <div class="skill-category-card panel tilt-card reveal">
+            <div class="category-icon">🎨</div>
+            <h3 class="category-title">Frontend &amp; UI/UX</h3>
+            
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">HTML5 Semántico &amp; CSS3</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" data-percent="88"></div>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">JavaScript (ES6+) Moderno</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" data-percent="82"></div>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">Responsive Design &amp; Mobile First</span>
+                <span class="skill-pct">86%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" data-percent="86"></div>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">Animaciones CSS &amp; Interactividad</span>
+                <span class="skill-pct">84%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" data-percent="84"></div>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">Quill.js &amp; Editores WYSIWYG</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" data-percent="80"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Backend & Cloud -->
+          <div class="skill-category-card panel tilt-card reveal">
+            <div class="category-icon">⚡</div>
+            <h3 class="category-title">Backend &amp; Datos</h3>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">Firebase &amp; Firestore (Auth / Realtime)</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" data-percent="82"></div>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">PHP Backend &amp; Manejo de Formularios</span>
+                <span class="skill-pct">78%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" data-percent="78"></div>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">Python Scripting &amp; Desktop GUI</span>
+                <span class="skill-pct">76%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" data-percent="76"></div>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">MySQL &amp; Modelado DER Relacional</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" data-percent="75"></div>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">APIs REST &amp; Conexión de Datos</span>
+                <span class="skill-pct">76%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" data-percent="76"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Herramientas & Entorno -->
+          <div class="skill-category-card panel tilt-card reveal">
+            <div class="category-icon">🛠️</div>
+            <h3 class="category-title">Herramientas &amp; Entorno</h3>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">Git &amp; Control de Versiones GitHub</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" data-percent="82"></div>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">CustomTkinter (Python GUI)</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" data-percent="80"></div>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">VS Code &amp; Extensiones Modernas</span>
+                <span class="skill-pct">86%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" data-percent="86"></div>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">Figma &amp; Prototipado Visual UI</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" data-percent="80"></div>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">GitHub Pages &amp; Despliegues</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" data-percent="82"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Metodologías & Trabajo -->
+          <div class="skill-category-card panel tilt-card reveal">
+            <div class="category-icon">✨</div>
+            <h3 class="category-title">Metodologías &amp; Identidad</h3>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">Metodologías Ágiles &amp; Scrum</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" data-percent="82"></div>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">Identidad Visual &amp; Tipografía</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" data-percent="88"></div>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">Modelado UML &amp; Arquitectura</span>
+                <span class="skill-pct">78%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" data-percent="78"></div>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">Resolución de Problemas &amp; Lógica</span>
+                <span class="skill-pct">84%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" data-percent="84"></div>
+              </div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-info">
+                <span class="skill-name">Accesibilidad &amp; Buenas Prácticas</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-bar" data-percent="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== 04. PROYECTOS DESTACADOS ==================== -->
+      <section class="projects section-container" id="proyectos">
+        <div class="section-head reveal">
+          <span class="eyebrow">// 04. Proyectos Destacados</span>
+          <h2>Piezas pensadas para conectar diseño, narrativa y código.</h2>
+          <p class="section-subtitle">Aplicaciones completas, desarrollo frontend/backend y soluciones reales para usuarios y escuelas.</p>
+        </div>
+
+        <div class="project-grid">
+          <!-- Proyecto 1: OBRbarber -->
+          <article class="project-card panel tilt-card reveal">
+            <div class="project-visual">
+              <img src="image.png" alt="OBRbarber - Barbería y Gestión de Turnos" class="project-img">
+              <span class="project-badge-tag">Firebase / Realtime</span>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Firebase Auth</span>
+              <span class="project-tag">JavaScript ES6</span>
+              <span class="project-tag">Gestión en Vivo</span>
+              <span class="project-tag">UI Moderna</span>
+            </div>
+            <h3>OBRbarber — Barbería y Gestión de Turnos</h3>
+            <p>
+              Sistema interactivo de reserva y gestión de turnos en tiempo real para barbería moderna. Incluye autenticación con Firebase, selector dinámico de barberos, agenda horaria (10:00 a 21:00 hs), almacenamiento en la nube y panel modal de citas confirmadas.
+            </p>
+            <div class="project-actions">
+              <a href="https://dreamy-narwhal-175135.netlify.app" target="_blank" class="project-link-btn">Ver proyecto →</a>
+              <a href="https://github.com/seleruizdiaz10-web/OBRbarber" target="_blank" class="project-link-btn">Ver Repositorio →</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 2: Bazar Milonga -->
+          <article class="project-card panel tilt-card reveal">
+            <div class="project-visual">
+              <img src="bazar_stock.jpg" alt="Bazar Milonga - Control de Stock y E-commerce" class="project-img">
+              <span class="project-badge-tag">Python + PHP</span>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Python CustomTkinter</span>
+              <span class="project-tag">PHP</span>
+              <span class="project-tag">Inventario &amp; Ventas</span>
+              <span class="project-tag">E-Commerce</span>
+            </div>
+            <h3>Bazar Milonga — Control de Stock &amp; Tienda Online</h3>
+            <p>
+              Ecosistema integral de comercio y stock: software de escritorio en Python con CustomTkinter para control de inventario, stock en vivo, alertas y balance de ventas, junto a una tienda online en PHP con carrito de compras y catálogo dinámico.
+            </p>
+            <div class="project-actions">
+              <a href="https://drive.google.com/drive/folders/1fVw6oZ65SURbC445U42iZZpFwvdtxb6B" target="_blank" class="project-link-btn">Ver Documentación →</a>
+              <a href="https://github.com/gonzalezalan-23/Bazar-Milonga" target="_blank" class="project-link-btn">Ver Repositorio →</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 3: Los Choris - Paquetes de Viaje -->
+          <article class="project-card panel tilt-card reveal">
+            <div class="project-visual">
+              <img src="choris_home_image1.png" alt="Los Choris - Venta de Paquetes de Viaje" class="project-img">
+              <span class="project-badge-tag">Olimpiadas E.E.S.T N°5</span>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Olimpiadas 2026</span>
+              <span class="project-tag">Scrum / UML</span>
+              <span class="project-tag">Carrito &amp; Pasajes</span>
+              <span class="project-tag">DER Relacional</span>
+            </div>
+            <h3>Los Choris — Paquetes de Viaje</h3>
+            <p>
+              Plataforma web turística y carrito de pasajes desarrollada para las Olimpiadas de Programación de la E.E.S.T N°5. Cuenta con catálogo de ofertas, información de unidades y choferes, emisión de tickets para Rapipago/Pago Fácil y modelado completo DER/UML.
+            </p>
+            <div class="project-actions">
+              <a href="img proyectos/presentacion proyecto paquetes de viajes.pdf" target="_blank" class="project-link-btn">Ver presentación (PDF) →</a>
+              <a href="https://swear-boat-14797878.figma.site/" target="_blank" class="project-link-btn">Ver Figma →</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 4: Portal de Noticias E.E.S.T N°5 -->
+          <article class="project-card panel tilt-card reveal">
+            <div class="project-visual">
+              <img src="noticias.png" alt="Portal de Noticias - E.E.S.T N°5" class="project-img">
+              <span class="project-badge-tag">Institucional Escolar</span>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Quill.js WYSIWYG</span>
+              <span class="project-tag">PHP Backend</span>
+              <span class="project-tag">E.E.S.T N°5</span>
+              <span class="project-tag">Gestión Editorial</span>
+            </div>
+            <h3>Portal de Noticias Escolares — E.E.S.T N°5</h3>
+            <p>
+              Portal web institucional para la publicación y administración autónoma de comunicados escolares de la Escuela Técnica N°5 "Dr. Manuel Sadosky". Incorpora editor de texto enriquecido Quill.js, carga de imágenes y gestión dinámica de artículos con PHP.
+            </p>
+            <div class="project-actions">
+              <a href="https://courageous-youtiao-54e40e.netlify.app/" target="_blank" class="project-link-btn">Ver proyecto →</a>
+              <a href="https://github.com/seleruizdiaz10-web/Noticias-Escuela" target="_blank" class="project-link-btn">Ver Repositorio →</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 5: Lumen Academia Educativa -->
+          <article class="project-card panel tilt-card reveal">
+            <div class="project-visual">
+              <img src="cursos.png" alt="CursosMi" class="project-img">
+              <span class="project-badge-tag">Plataforma Académica</span>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Gestión Educativa</span>
+              <span class="project-tag">Roles &amp; Alumnos</span>
+              <span class="project-tag">Oficios &amp; Render Cloud</span>
+              <span class="project-tag">Cursos</span>
+            </div>
+            <h3>CursosMi — Venta de Cursos</h3>
+            <p>
+              Plataforma de venta de cursos de formación y oficios. Cuenta con catálogo categorizado, visualizador interactivo de temarios, validación de certificados y registro de alumnos.
+            </p>
+            <div class="project-actions">
+              <a href="https://cursosmi-vlj9.onrender.com/" target="_blank" class="project-link-btn">Ver portal →</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 6: Recorrido Berazategui -->
+          <article class="project-card panel tilt-card reveal">
+            <div class="project-visual">
+              <img src="mapas.png" alt="Recorrido Berazategui - Puntos de interes" class="project-img">
+              <span class="project-badge-tag">Turismo &amp; Geolocalización</span>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Diseño Web</span>
+              <span class="project-tag">MapBox API</span>
+              <span class="project-tag">Puntos de interés</span>
+              <span class="project-tag">Responsive</span>
+            </div>
+            <h3>Recorrido Berazategui &amp; Puntos de Interés</h3>
+            <p>
+            Guía interactiva municipal y turística de Berazategui orientada a vecinos y visitantes. Preseta mapas interactivos, con Geolocalización, trazado de recorridos, frecuencias de transporte y datos históricos.
+            </p>
+            <div class="project-actions">
+              <a href="https://sensational-conkies-9c3b6a.netlify.app/" target="_blank" class="project-link-btn">Ver Portal →</a>
+              <a href="https://github.com/seleruizdiaz10-web/Mapa-Berazategui" target="_blank" class="project-link-btn">Ver Repositorio →</a>
+            </div>
+          </article>
+
+          <!-- Proyecto 7: AutoBot -->
+          <article class="project-card panel tilt-card reveal">
+            <div class="project-visual">
+              <img src="WhatsApp Image 2026-11-25 at 8.14.47 AM.jpeg" alt="AutoBot - Robot de un auto" class="project-img">
+              <span class="project-badge-tag">Placa controladora + programación en bloques</span>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Robótica Móvil</span>
+              <span class="project-tag">Placa controladora</span>
+              <span class="project-tag">Programación en bloques</span>
+              <span class="project-tag">Robótica inclusiva</span>
+            </div>
+            <h3>AutoBot - Robot auto para niños</h3>
+            <p>
+              Vehículo robótico móvil diferencial diseñado para prácticas de robótica y cinemática. Cuenta con chasis modular liviano, ruedas motrices independientes acopladas a motorreductores DC, rueda loca estabilizadora y placa controladora embebida.
+            </p>
+            <div class="project-actions">
+              <a href="Presentación Proyecto de Robótica Moderno Gris.pdf" target="_blank" class="project-link-btn">Ver Presentación →</a>
+            </div>
+          </article>
+          
+          <!-- Proyecto 8: PerroBot -->
+          <article class="project-card panel tilt-card reveal">
+            <div class="project-visual">
+              <img src="WhatsApp Image 2026-11-25 at 8.06.17 PM.jpeg" alt="PerroBot - Robot interactivo" class="project-img">
+              <span class="project-badge-tag">Robotica + Arduino</span>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Impresion3D</span>
+              <span class="project-tag">ArduinoNano</span>
+              <span class="project-tag">Robotica</span>
+            </div>
+            <h3>Perrobot — Proyecto de Robotica</h3>
+            <p>
+              Cuadrúpedo robótico bioinspirado modelado y fabricado con tecnología de impresión 3D. Emplea un servomotor independiente articulados en la cola para el control del movimiento, con ojos luminosos y ladrido potente.
+            </p>
+            <div class="project-actions">
+              <span class="project-action-note">🐕 Proyecto Físico / Robótica — Cuadrúpedo articulado 3D</span>
+            </div>
+          </article>
+          
+          <!-- Proyecto 9: SAT -->
+          <article class="project-card panel tilt-card reveal">
+            <div class="project-visual">
+              <img src="WhatsApp Image 2026-11-25 at 8.25.25 AM.jpeg" alt="SAT - Sistema de Alerta para Talleres" class="project-img">
+              <span class="project-badge-tag">ArduinoUNO + ESP32</span>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">ArduinoUNO</span>
+              <span class="project-tag">Shield Ethernet</span>
+              <span class="project-tag">Interfaz &amp; Alertas</span>
+              <span class="project-tag">Sistema</span>
+            </div>
+            <h3>SAT - Sistema de Alerta para Talleres / Proyecto Fisico</h3>
+            <p>
+              Sistema de Alerta para Talleres creado para accionar con velocidad frente a emergencias ocurridas en los talleres escolares de escuelas técnicas.
+            </p>
+            <div class="project-actions">
+              <a href="SAAT_Presentacion_BlancoRojo.pptx" target="_blank" class="project-link-btn">Ver presentación →</a>
+            </div>
+          </article>
+        </div>
+      </section>
+          
+
+
+      <!-- ==================== 05. ENFOQUE & PROPUESTA DE VALOR ==================== -->
+      <section class="section-container" id="enfoque">
+        <div class="section-head reveal">
+          <span class="eyebrow">// 05. Enfoque &amp; Propuesta de Valor</span>
+          <h2>Público Objetivo &amp; Metas Profesionales</h2>
+          <p class="section-subtitle">¿A quién puedo aportar valor y cómo abordo los desafíos técnicos y de diseño?</p>
+        </div>
+
+        <div class="target-grid">
+          <!-- Target 1: Emprendimientos -->
+          <div class="target-card panel tilt-card reveal">
+            <div class="target-icon">✨</div>
+            <h3 class="target-title">Emprendimientos &amp; Marcas Personales</h3>
+            <p class="target-desc">
+              Diseño de sitios web atractivos con identidad visual propia, presencia digital moderna y experiencia fluida que destaque frente a la competencia y conecte con los clientes.
+            </p>
+          </div>
+
+          <!-- Target 2: Comercios -->
+          <div class="target-card panel tilt-card reveal">
+            <div class="target-icon">🏪</div>
+            <h3 class="target-title">Comercios &amp; Negocios Locales</h3>
+            <p class="target-desc">
+              Sistemas a medida para digitalizar operaciones: software de control de stock, agendas y reservas online de turnos, y tiendas e-commerce que optimicen los tiempos del negocio.
+            </p>
+          </div>
+
+          <!-- Target 3: Equipos Técnicos -->
+          <div class="target-card panel tilt-card reveal">
+            <div class="target-icon">🚀</div>
+            <h3 class="target-title">Equipos de Desarrollo &amp; Tech Leads</h3>
+            <p class="target-desc">
+              Integración proactiva: dominio estricto de Git, trabajo en equipo con metodologías ágiles (Scrum), atención rigurosa a la accesibilidad y pasión por aprender nuevas tecnologías.
+            </p>
+          </div>
+        </div>
+
+        <!-- Professional Goal Milestone Box -->
+        <div class="goal-milestone-box panel reveal">
+          <div>
+            <h3 class="goal-milestone-title">🎯 Objetivo Profesional &amp; Compromiso Técnico</h3>
+            <p class="goal-milestone-desc">
+              Mi objetivo es seguir potenciando mis habilidades como programadora frontend y de software, construyendo soluciones accesibles, intuitivas y con una estética que inspire confianza y genere un impacto positivo en los usuarios y organizaciones.
+            </p>
+          </div>
+          <div class="milestone-badge">
+            E.E.S.T N°5 • Berazategui
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== 06. CONTACTO MULTICANAL & FORMULARIO ==================== -->
+      <section class="contact-section panel reveal" id="contacto">
+        <div class="contact-header-block">
+          <span class="eyebrow">// 06. Contacto</span>
+          <h2>Si buscas una presencia web con identidad, estoy lista para crearla.</h2>
+          <p class="lead">
+            Respuestas rápidas para proyectos freelance, colaboraciones institucionales o propuestas laborales. Elige el canal que te sea más cómodo.
+          </p>
+
+          <div class="contact-channels-list">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/5491137554748" target="_blank" rel="noreferrer" class="channel-btn-card">
+              <span class="channel-icon">💬</span>
+              <div>
+                <span class="channel-name">WhatsApp Directo</span>
+                <span class="channel-hint">Conversemos directamente</span>
+              </div>
+            </a>
+
+          
+            <!-- GitHub -->
+            <a href="https://github.com/seleruizdiaz10-web" target="_blank" rel="noreferrer" class="channel-btn-card">
+              <span class="channel-icon">🐙</span>
+              <div>
+                <span class="channel-name">GitHub</span>
+                <span class="channel-hint">Repositorios y proyectos</span>
+              </div>
+            </a>
+
+            <!-- Email Directo -->
+            <button class="channel-btn-card" id="copy-email-btn-2" data-email="seleruizdiaz10@gmail.com">
+              <span class="channel-icon">📧</span>
+              <div>
+                <span class="channel-name">Email</span>
+                <span class="channel-hint">seleruizdiaz10@gmail.com (Copiar)</span>
+              </div>
+            </button>
+          </div>
+
+          <!-- CV Promo Box -->
+          <div class="cv-promo-box">
+            <div>
+              <h4>¿Necesitas mi Curriculum Vitae?</h4>
+              <p>Disponible para consultas laborales, pasantías y equipos de desarrollo.</p>
+            </div>
+            <button type="button" class="btn btn-primary open-cv-btn" style="white-space: nowrap;">
+              📄 Ver CV
+            </button>
+          </div>
+        </div>
+
+        <!-- Contact Form Box -->
+        <div class="contact-form-box">
+          <h3>Enviar un Mensaje Directo</h3>
+          <p class="form-desc">Completa el formulario y responderé a la brevedad.</p>
+
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="form-name" class="form-label">&gt; Tu Nombre o Empresa *</label>
+              <input type="text" id="form-name" class="form-input" placeholder="Ej: Valentina Gómez / Innova Tech" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-email" class="form-label">&gt; Correo Electrónico *</label>
+              <input type="email" id="form-email" class="form-input" placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-service" class="form-label">&gt; Tipo de Oportunidad</label>
+              <select id="form-service" class="form-select">
+                <option value="frontend">Desarrollo Web Frontend / UI</option>
+                <option value="system">Sistema de Gestión / Turnos / Stock</option>
+                <option value="hiring">Pasantía / Oportunidad Laboral</option>
+                <option value="consultancy">Diseño &amp; Identidad Web</option>
+                <option value="other">Otro asunto</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message" class="form-label">&gt; Mensaje o Requerimientos *</label>
+              <textarea id="form-message" class="form-textarea" placeholder="Cuéntame sobre tu idea, objetivos o propuesta..." required></textarea>
+            </div>
+
+
+            <!-- Botón enviar por WhatsApp -->
+            <button type="submit" id="whatsapp-quick-btn" class="btn btn-primary btn-submit">
+              💬 Enviar mensaje por WhatsApp
+            </button>
+
+            <div id="form-success-msg" class="form-success-banner">
+              ✓ Se abrió WhatsApp con tu mensaje listo para enviar. ¡Muchas gracias por contactarme!
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <p>© 2026 Selena Ruiz Diaz. Desarrollado con HTML5, CSS3 y JavaScript moderno.</p>
+        <p class="footer-school">E.E.S.T N°5 "Dr. Manuel Sadosky" — Evaluación de Saberes</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ==================== CV MODAL ==================== -->
+  <div class="modal-overlay" id="cv-modal">
+    <div class="modal-box modal-box-cv">
+      <div class="modal-header">
+        <div class="modal-title-row">
+          <span class="modal-title-icon">📄</span>
+          <span class="modal-title-text">Curriculum Vitae — Selena Ruiz Diaz</span>
+        </div>
+        <button class="modal-close-btn" id="cv-modal-close" title="Cerrar ventana (ESC)">&times;</button>
+      </div>
+      
+      <div class="modal-body cv-modal-body">
+        <div class="cv-sheet">
+          <div class="cv-sheet-header">
+            <h2 class="cv-sheet-name">Selena Ruiz Diaz</h2>
+            <p class="cv-sheet-profession">Programadora Frontend &amp; Desarrolladora de Software</p>
+            <p class="cv-sheet-contact">
+              <strong>Email:</strong> seleruizdiaz10@gmail.com |
+              <strong>GitHub:</strong> <a href="https://github.com/seleruizdiaz10-web" target="_blank" rel="noreferrer">github.com/seleruizdiaz10-web</a> |
+              <strong>Localidad:</strong> Berazategui, Buenos Aires
+            </p>
+          </div>
+
+          <div class="cv-sheet-section">
+            <h4 class="cv-sheet-title">Perfil Profesional</h4>
+            <p class="cv-sheet-summary">
+              Estudiante de la Escuela de Educación Secundaria Técnica N° 5 "Dr. Manuel Sadosky" con especialización en Programación y Desarrollo de Software. Cuento con experiencia práctica en el desarrollo de aplicaciones web dinámicas, sistemas de gestión, tiendas online y proyectos de robótica educativa. Me destaco por combinar sensibilidad visual y diseño UI/UX con código modular y arquitectura escalable, trabajando con metodologías ágiles (Scrum) y control de versiones. Busco integrarme a un equipo o proyecto donde pueda seguir creciendo y aportando valor.
+            </p>
+          </div>
+
+          <div class="cv-sheet-section">
+            <h4 class="cv-sheet-title">Datos Personales</h4>
+            <ul class="cv-sheet-bullets">
+              <li><strong>Localidad:</strong> Berazategui, Buenos Aires, Argentina</li>
+              <li><strong>Institución actual:</strong> E.E.S.T N° 5 "Dr. Manuel Sadosky" (Programación)</li>
+              <li><strong>Disponibilidad:</strong> Pasantías, proyectos freelance y equipos de desarrollo</li>
+            </ul>
+          </div>
+
+          <div class="cv-sheet-section">
+            <h4 class="cv-sheet-title">Formación Académica</h4>
+            <div class="cv-sheet-entry">
+              <p class="cv-sheet-role">Tecnicatura en Programación y Desarrollo de Software</p>
+              <p class="cv-sheet-meta">Escuela de Educación Secundaria Técnica N° 5 "Dr. Manuel Sadosky" – Berazategui | 2020 – Actualidad</p>
+            </div>
+            <div class="cv-sheet-entry">
+              <p class="cv-sheet-role">Desarrollo Web &amp; Tecnologías Modernas (Formación Práctica)</p>
+              <p class="cv-sheet-meta">JavaScript ES6+, Firebase, PHP, Python y Diseño UI/UX | 2024 – Presente</p>
+            </div>
+            <div class="cv-sheet-entry">
+              <p class="cv-sheet-role">Educación Primaria</p>
+              <p class="cv-sheet-meta">Escuela Nuestra Señora de Ranelagh (2016 – 2019) &amp; Instituto Almirante G. Brown (2013 – 2015)</p>
+            </div>
+          </div>
+
+          <div class="cv-sheet-section">
+            <h4 class="cv-sheet-title">Experiencia y Proyectos</h4>
+
+            <div class="cv-sheet-entry">
+              <p class="cv-sheet-role">Desarrolladora Full Stack — OBRbarber (Barbería y Gestión de Turnos)</p>
+              <p class="cv-sheet-meta">Proyecto Web en Tiempo Real | Firebase, JavaScript ES6+, HTML5 &amp; CSS3</p>
+              <ul class="cv-sheet-bullets">
+                <li>Desarrollo de sistema interactivo de reserva y gestión de turnos en vivo (10:00 a 21:00 hs).</li>
+                <li>Implementación de autenticación con Firebase, almacenamiento en la nube y panel modal de citas confirmadas.</li>
+                <li>Diseño de interfaz moderna con selector dinámico de barberos.</li>
+              </ul>
+            </div>
+
+            <div class="cv-sheet-entry">
+              <p class="cv-sheet-role">Desarrolladora Desktop &amp; Web — Bazar Milonga (Control de Stock y E-Commerce)</p>
+              <p class="cv-sheet-meta">Ecosistema Integral | Python (CustomTkinter) &amp; PHP</p>
+              <ul class="cv-sheet-bullets">
+                <li>Creación de aplicación de escritorio en Python con CustomTkinter para control de inventario, alertas y balance de ventas.</li>
+                <li>Desarrollo de tienda online en PHP con catálogo dinámico y carrito de compras.</li>
+              </ul>
+            </div>
+
+            <div class="cv-sheet-entry">
+              <p class="cv-sheet-role">Desarrolladora Frontend &amp; Analista — Los Choris (Paquetes de Viaje)</p>
+              <p class="cv-sheet-meta">Olimpiadas de Programación E.E.S.T N° 5 | 2026 | Scrum, UML &amp; DER Relacional</p>
+              <ul class="cv-sheet-bullets">
+                <li>Desarrollo de plataforma turística con carrito de pasajes, catálogo de ofertas e información de unidades y choferes.</li>
+                <li>Emisión de tickets para Rapipago/Pago Fácil y modelado completo DER/UML bajo metodología Scrum.</li>
+              </ul>
+            </div>
+
+            <div class="cv-sheet-entry">
+              <p class="cv-sheet-role">Desarrolladora Web — Portales Institucionales, Educativos y Turísticos</p>
+              <p class="cv-sheet-meta">Portal de Noticias E.E.S.T N° 5, CursosMi &amp; Recorrido Berazategui | PHP, Quill.js &amp; MapBox API</p>
+              <ul class="cv-sheet-bullets">
+                <li>Portal escolar con editor enriquecido Quill.js, carga de imágenes y gestión dinámica de artículos en PHP.</li>
+                <li>Plataforma de venta de cursos (CursosMi) con validación de certificados y guía municipal interactiva con MapBox API y geolocalización.</li>
+              </ul>
+            </div>
+
+            <div class="cv-sheet-entry">
+              <p class="cv-sheet-role">Desarrolladora de Robótica y Sistemas Físicos — AutoBot, PerroBot &amp; SAT</p>
+              <p class="cv-sheet-meta">Proyectos Físicos E.E.S.T N° 5 | Arduino UNO / Nano, ESP32 &amp; Impresión 3D</p>
+              <ul class="cv-sheet-bullets">
+                <li>Diseño de vehículo robótico diferencial (AutoBot) y cuadrúpedo articulado impreso en 3D (PerroBot).</li>
+                <li>Creación del Sistema de Alerta para Talleres (SAT) con Arduino UNO, Shield Ethernet y ESP32 para emergencias escolares.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cv-sheet-section">
+            <h4 class="cv-sheet-title">Habilidades</h4>
+            <div class="cv-sheet-skills-grid">
+              <ul class="cv-sheet-bullets">
+                <li>HTML5 Semántico, CSS3 y Diseño Responsive (Mobile First)</li>
+                <li>JavaScript (ES6+), PHP y Python (CustomTkinter)</li>
+                <li>Firebase (Auth / Firestore) y MySQL (Modelado DER / UML)</li>
+                <li>Git, GitHub, GitHub Pages, VS Code y Figma</li>
+              </ul>
+              <ul class="cv-sheet-bullets">
+                <li>Diseño UI/UX, identidad visual y animaciones CSS</li>
+                <li>Integración de APIs REST, Quill.js y MapBox API</li>
+                <li>Robótica educativa y hardware (Arduino, ESP32)</li>
+                <li>Metodologías ágiles (Scrum), trabajo en equipo y resolución de problemas</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-modal-actions">
+          <a href="cv.html" target="_blank" class="btn btn-secondary">
+            ↗ Abrir CV completo
+          </a>
+          <button type="button" class="btn btn-primary" onclick="window.print()">
+            🖨️ Imprimir / Guardar en PDF
+          </button>
+          <button type="button" class="btn btn-outline" onclick="window.PortfolioApp.closeCvModal()">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="portfolio-toast" class="portfolio-toast"></div>
+
+  <!-- Scripts -->
+  <script src="mi portfolio.js"></script>
+</body>
+</html>
